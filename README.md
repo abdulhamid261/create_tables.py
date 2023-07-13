@@ -6,9 +6,9 @@
 
 ### Introduction
 
-A startup called **kikkify** wanted to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team was particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
+An idea named **kikkify**, to analyze the data that's been collecting on songs and user activity on a music streaming app. The analytics part was particularly interested in understanding what songs users are listening to. Currently, there are no easy way to query the data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
-They'd like a data engineer to create a **mysql database** with tables designed to optimize queries on song play analysis, and bring you on the project. 
+The idea was to create a **mysql database** with tables designed to optimize queries on song play analysis, and bring you on the project. 
 
 Goals for the projects are to:
 
