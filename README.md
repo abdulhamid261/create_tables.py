@@ -1,4 +1,4 @@
-# Project: Data Modeling with Postgres
+# Project: Data Modeling with mysql
 
 
 
@@ -6,9 +6,9 @@
 
 ### Introduction
 
-A startup called **Sparkify** wanted to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team was particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
+A startup called **kikkify** wanted to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team was particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
-They'd like a data engineer to create a **Postgres database** with tables designed to optimize queries on song play analysis, and bring you on the project. 
+They'd like a data engineer to create a **mysql database** with tables designed to optimize queries on song play analysis, and bring you on the project. 
 
 Goals for the projects are to:
 
@@ -24,19 +24,12 @@ Goals for the projects are to:
 
 Database schema that was utilized in this project is one of the simplest data mart schemas named **Star Schema** which consist in our case of one **fact table** - **songplays** and several **dimension tables - artists, users, songs and time** from which two are the most relevant - **artists and songs** since it was utilized for the ETL and desired queries.
 
-It was optimized for queries on song play analysis.
-
-See below the tables fact and dimension tables.
-
-![](https://raw.githubusercontent.com/baky0905/data-modeling-with-postgres/master/imgs/database_schema_diagram.png)
-
-
 
 ## ETL pipeline
 
 ETL pipeline was designed with a main focus on getting the insights into understanding what songs users are listening to. 
 
-The whole ETL pipeline reads the json data from `song_data` and `log_data` files located in two local directories , processes it  and  inserts them into the Postgres database sparkifydb in created tables using Python and SQL. Tables where the data is inserted in the database are `songplays`, `users`, `artists`, `songs` and `time`.  Time table has no defined relationship with the existing tables.
+The whole ETL pipeline reads the json data from `song_data` and `log_data` files located in two local directories , processes it  and  inserts them into the Postgres database kikkifydb in created tables using Python and SQL. Tables where the data is inserted in the database are `songplays`, `users`, `artists`, `songs` and `time`.  Time table has no defined relationship with the existing tables.
 
 
 ## Explanation of the files in the repository
